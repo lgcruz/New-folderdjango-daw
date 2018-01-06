@@ -1,0 +1,81 @@
+{% extends 'mapa/base.html' %}
+{% load static from staticfiles %}
+{% block title  %}Polifinder{% endblock %}
+{% block estilo %}
+			<link rel="stylesheet" href="{% static 'css/estilo_galeria.css' %}" type="text/css">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{% endblock %}
+{% block body %}
+	<div class="container-fluid" id="contenido" >
+		<div class="row">
+			<div class="col-lg-1"></div>
+			<div class="col-lg-10">
+				<div class="jumbotron">
+					<div class= "container-fluid" id="ContenedorGaleria">
+						<div class="row 1">
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id ="contenedorFila1">
+								<img src="{% static 'galeria/fiec.png' %}" width="280" height="260"  /><span><br/>
+								FIEC</span>
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id="contenedorFila2">
+								<img src="{% static 'galeria/fict.png' %}" width="280" height="260"  /><span><br/>
+								FICT</span>
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id ="contenedorFila3">
+								<span><img src="{% static 'galeria/biblioteca.jpg' %}" width="280" height="260" /><br/>
+								CIB-Biblioteca</span>
+							</div>
+						</div>
+						<div class="row 2">
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id ="contenedorFila1">
+								<img src="{% static 'galeria/tecnologias.jpg' %}" width="280" height="260"  /><span><br/>
+								Tecnologia</span>
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id="contenedorFila2">
+								<span><img src="{% static 'galeria/Rectorado.jpg' %}" width="280" height="260" /><br/>
+								Rectorado</span>
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id ="contenedorFila3">
+								<img src="{% static 'galeria/celex.png' %}" width="280" height="260"  /><span><br/>
+								CELEX</span>
+							</div>
+						</div>
+						<div class="row 3">
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id ="contenedorFila1">
+								<span><img src="{% static 'galeria/edcom.png' %}" width="280" height="260" /><br/>
+								EDCOM</span>
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id="contenedorFila2">
+								<img src="{% static 'galeria/fimcbor.png' %}" width="280" height="260"  /><span><br/>
+								FIMCBOR</span>
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id ="contenedorFila3">
+								<img src="{% static 'galeria/fimcp.png' %}" width="280" height="260" /><span><br/>
+								FIMCP</span>
+							</div>
+						</div>
+						<div class="row 4">
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id ="contenedorFila1">
+								<img src="{% static 'galeria/gym_servidores.jpg' %}" width="280" height="260"  /><span><br/>
+								Gimnasio de Servidores</span>
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id="contenedorFila2">
+								<img src="{% static 'galeria/Admisiones.png' %}" width="280" height="260" /><span><br/>
+								Admisiones</span>
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id="contenedorFila3">
+								<img src="{% static 'galeria/fsch.png' %}" width="280" height="260" /><span><br/>
+								FCSH</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-1"></div>
+	</div>
+	
+{% endblock %}
+	

@@ -1,0 +1,50 @@
+{% extends 'mapa/base.html' %}
+{% load static from staticfiles %}
+{% block title  %}Polifinder{% endblock %}
+{% block estilo %}
+	<link rel="stylesheet" href="{% static 'css/AcercaDeEstilo.css' %}" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Exo' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Joti+One' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		/* fuentes en nuestro disco duro */
+		@font-face {
+			font-family: "SignPainter-HouseScript";
+			src: url("fuente_SignPainter-HouseScript.ttf") format("truetype");
+		}
+		@font-face {
+			font-family: "Quicksand-Bold Regular";
+			src: url("fuente_Quicksand-Bold.otf") format("opentype");
+		}
+		@font-face{
+			font-family: "SignPainter-HouseScript-IE";
+			src: url("fuente_SignPainter-HouseScript.eot");
+		}
+		.fuente-1{font-family:"SignPainter-HouseScript";font-size:20px;}
+		.fuente-2{font-family:"Quicksand-Bold Regular";font-size: 20px;}
+		.fuente-IE{font-family:"SignPainter-HouseScript-IE";font-size:20px;}
+		/* fuentes de google */
+		.fuente-Exo{font-family:"Exo";font-size:20px;}
+		.fuente-JotiOne{font-family:"Joti One";font-size:20px;}
+	</style>
+{% endblock %}
+{% block body %}
+
+		<div class="row">
+			<div class="col-lg-1"></div>
+			<div class="col-lg-10">
+				<div class="jumbotron">
+					<div class="wrapper"><img src="{% static 'galeria/fondo-acerca.jpg' %}" class="img-responsive"></div>
+					<h1>Misión</h1>
+					<p><div class='fuente-Exo'>Ayudar a la comunidad politecnica, en especial a los novatos, ya que todos alguna vez lo fuimos</div></p>
+					<p></p>
+					<h1>Visión</h1>
+					<p><div class='fuente-Exo'>Formar parte de las herramientas mas usadas por los politecnicos recien ingresados</div></p>
+				</div>
+			</div>
+			<div class="col-lg-1"></div>
+		</div>
+
+{% endblock %}

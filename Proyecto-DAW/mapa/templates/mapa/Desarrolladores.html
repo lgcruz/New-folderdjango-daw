@@ -1,0 +1,112 @@
+﻿{% extends 'mapa/base.html' %}
+{% load static from staticfiles %}
+{% block title  %}Polifinder{% endblock %}
+{% block estilo %}
+			<link rel="stylesheet" href="{% static 'css/AcercaDeEstilo.css' %}" type="text/css">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{% endblock %}
+{% block body %}
+	<div class="container-fluid" id="contenido" >
+		<div class="row">
+			<div class="col-lg-1"></div>
+			<div class="col-lg-10">
+				<div class="jumbotron">
+					<header>
+						<h1>Hoja de Vida</h1>
+					</header>
+					<div id="nombres" class ="box">
+						<div class="box-group">
+							<div class="row">
+								<div class="col-3"></div>
+								<div class="col-6">
+									<div class="head">
+										<h2>Luis Cruz</h2>
+										<img src="galeria/foto.jpg" id ="profile" class="foto"/>
+									</div>
+								</div>
+								<div class="col-3"></div>
+							</div>
+						</div>
+						<p>
+							Ingenieria en Computacion<br>
+							Escuela Superior Politecnica Del Litoral(ESPOL)<br>
+							Guayaquil, Ecuador<br>
+							593<br>
+						</p>
+						<br>
+					</div>
+					<div id="datos" class ="box">
+						<h2>Datos Personales</h2>
+						<p>
+							Sauces 7, manzana 381, villa 8<br>
+							0968388887<br>
+						</p>
+					</div>
+					<div id="educacion" class ="box">
+						<h2>Educacion</h2>
+						<div class="box-group">
+							<div class="row">
+								<div class="col-6">
+									<div class="contenido">
+										<img src="espol.png" class="foto" id="uni"/>
+										<h3 class="institucion">Universidad</h3>
+										<p class="periodo">Año de inicio - Año de finalizacion</p>
+										<p>
+											PYTHON - Aprendi lo basico de programacion<br>
+											JAVA - Aprendi a manejar objetos<br>
+											HTML - Aprendi diseño web<br>
+											C++ - Aprendi a manejar memoria<br>
+										</p>
+										<hr class="separador">
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="contenido">
+										<img src="logo.jpg" class="foto" id="cole"/>
+										<h3 class="institucion">Colegio</h3>
+										<p class="periodo">Año de inicio - Año de finalizacion</p>
+										<p>
+											Logica Matematica<br>
+											Quimica Basica<br>
+											Manejo de Herramientas de Office<br>
+											Fisica de colegio<br>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="habilidades" class ="box">
+						<h2>Habilidades Tecnicas</h2>
+						<div class="contenido">
+							<div id="habilidad">
+								<div class="habilidad">
+									<div class=cantidad_h>15</div>
+									<div>HTML</div>
+								</div>
+								<div class="habilidad">
+									<div class=cantidad_h>2</div>
+									<div>CSS3</div>
+								</div>
+								<div class="habilidad">
+									<div class=cantidad_h>5</div>
+									<div>PYTHON</div>
+								</div>
+								<div class="habilidad">
+									<div class=cantidad_h>2</div>
+									<div>JAVA</div>
+								</div>
+								<br>
+							</div>
+						</div>
+						<br>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-1"></div>
+		</div>
+	</div>
+{% endblock %}

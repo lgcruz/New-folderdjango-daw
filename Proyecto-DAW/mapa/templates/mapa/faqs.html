@@ -1,0 +1,59 @@
+{% extends 'mapa/base.html' %}
+{% load static from staticfiles %}
+{% block title  %}Polifinder{% endblock %}
+{% block estilo %}
+			<link rel="stylesheet" href="{% static 'css/AcercaDeEstilo.css' %}" type="text/css">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{% endblock %}
+{% block body %}
+	<div class="container-fluid" id="contenido" >
+		<div class="row">
+			<div class="col-lg-1"></div>
+			<div class="col-lg-10">
+				<div class="jumbotron">
+					<table>
+						<tr>
+							<h2>Preguntas Frecuentes</h2>
+						</tr>
+						<tr>
+							<p>1.- ¿Que es la ESPOL?</p><li><a class="pregunta" href="1.html">respuesta</a></li>
+						</tr>
+						<tr>
+							<p>2.- ¿Que es la FIEC?</p><li><a href="2.html">respuesta</a></li>
+						</tr>
+						<tr>
+							<p>3.- ¿Que es la FCSH?</p><li><a href="3.html">respuesta</a></li>
+						</tr>
+						<tr>
+							<p>4.- ¿Que es la FIMCP?</p><li><a href="4.html">respuesta</a></li>
+						</tr>
+						<tr>
+							<p>5.- ¿Que es la FICT?</p><li><a href="5.html">respuesta</a></li>
+						</tr>
+						<tr>
+							<p>6.- ¿Que es la FIMCBOR?</p><li><a href="6.html">respuesta</a></li>
+						</tr>
+						<tr>
+							<p>7.- ¿Que es la FCV?</p><li><a href="7.html">respuesta</a></li>
+						</tr>
+						<tr>
+							<p>8.- ¿Que es EDCOM?</p><li><a href="8.html">respuesta</a></li>
+						</tr>
+						<tr>
+							<p>9.- ¿Que es el CELEX?</p><li><a href="9.html">respuesta</a></li>
+						</tr>
+						<tr>
+							<p>10.- ¿Que es el parque AJA?</p><li><a href="10.html">respuesta</a></li>
+						</tr>
+						<tr>
+							<p>11.- ¿Que es VINCULOS CON LA SOCIEDAD?</p><li><a href="11.html">respuesta</a></li>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="col-lg-1"></div>
+		</div>
+	</div>
+{% endblock %}
